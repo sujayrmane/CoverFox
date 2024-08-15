@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FBLogTest(failed)">
+    <classes>
+      <class name="coverFoxTestpkgPOM.FbTest">
+        <methods>
+          <include name="launchwepage"/>
+          <include name="Fblogin"/>
+        </methods>
+      </class> <!-- coverFoxTestpkgPOM.FbTest -->
+    </classes>
+  </test> <!-- FBLogTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
