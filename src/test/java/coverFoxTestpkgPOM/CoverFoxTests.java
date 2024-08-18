@@ -6,12 +6,12 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import coverFoxBasePkgPOM.DriverBase;
@@ -90,6 +90,7 @@ public class CoverFoxTests extends DriverBase{
 	  Assert.assertEquals(cfrp.Resultbanners(),cfrp.getPlanNumbersFromBanners(),"banner is not equals to results,TC failed");
 	  cfrp.sortdropdownisdiplayed();
 	  Reporter.log("sort dopdown is displayed", true);
+	  cfrp.basetext(driver);
 	  
   }
 	  
